@@ -21,3 +21,13 @@ crash.log
 # IDEs
 .vscode/
 .idea/
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+*.tfplan
+
+.DS_Store
+.vscode/
+.idea/
