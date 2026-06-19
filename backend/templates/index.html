@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AWS 3-Tier Image Platform</title>
+</head>
+<body>
+
+    <h1>AWS 3-Tier Image Platform</h1>
+
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="image">
+        <button type="submit">Upload</button>
+    </form>
+
+    <hr>
+
+    <h2>Uploaded Images</h2>
+
+    <ul>
+        {% for image in images %}
+        <li>{{ image }}</li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>

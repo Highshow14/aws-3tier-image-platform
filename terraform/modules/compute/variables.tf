@@ -1,0 +1,23 @@
+variable "project_name" {
+  type = string
+}
+
+variable "private_subnet_ids" {
+  type = list(string)
+}
+
+variable "web_sg_id" {
+  type = string
+}
+
+variable "app_sg_id" {
+  type = string
+}
+
+variable "target_group_arn" {
+  type = string
+}
+
+variable "app_instance_profile_name" {
+  type = string
+}
