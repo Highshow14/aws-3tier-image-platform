@@ -60,3 +60,12 @@ module "compute" {
 
   app_instance_profile_name = module.iam.app_instance_profile_name
 }
+
+module "cloudwatch" {
+
+  source = "./modules/cloudwatch"
+
+  project_name = var.project_name
+
+  alb_name = module.alb.alb_name
+}
